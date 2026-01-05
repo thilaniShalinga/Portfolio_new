@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
-import Img from '../assets/front_image.png'
+import Img from "../assets/front_image.png";
 
 // Typing Effect Component
 function Typing({ text, speed = 80 }) {
@@ -85,7 +85,7 @@ export default function Hero({ darkMode }) {
         <div className="flex flex-row space-x-4">
           {/* Download CV Button */}
           <motion.a
-            href="https://www.freepik.com/your-cv-link"
+            href="https://drive.google.com/file/d/1IKQBQ0DftaA3NS8Bl71YMYkYddht8kaS/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={`px-8 py-4 rounded-xl font-semibold text-xl transition-all duration-300 ${
@@ -115,7 +115,7 @@ export default function Hero({ darkMode }) {
         </div>
         <div className="flex space-x-8 mt-8">
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/athilani-shalinga-a634ab254/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform hover:scale-125"
@@ -128,7 +128,7 @@ export default function Hero({ darkMode }) {
           </a>
 
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/thilaniShalinga"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform hover:scale-125"
@@ -154,7 +154,7 @@ export default function Hero({ darkMode }) {
           </a>
 
           <a
-            href="https://twitter.com/your-username"
+            href="https://x.com/athilani44331"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform hover:scale-125"
