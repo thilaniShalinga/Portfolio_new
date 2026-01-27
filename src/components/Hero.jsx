@@ -25,7 +25,7 @@ export default function Hero({ darkMode }) {
   return (
     <section
       id="hero"
-      className={`relative min-h-screen flex flex-col justify-center px-6 md:px-20 py-32 pt-32 transition-colors duration-500 ${
+      className={`relative min-h-screen flex flex-col justify-center px-6 md:px-20 transition-colors duration-500 ${
         darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
       }`}
     >
@@ -39,7 +39,7 @@ export default function Hero({ darkMode }) {
         />
       </div>
       <motion.div
-        className="max-w-4xl"
+        className="max-w-4xl w-full"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -58,7 +58,7 @@ export default function Hero({ darkMode }) {
 
         {/* Name */}
         <motion.h1
-          className={`text-6xl md:text-8xl font-extrabold mb-6 leading-tight text-left ${
+          className={`text-6xl md:text-8xl font-extrabold leading-tight text-left ${
             darkMode ? "text-gray-300" : "text-gray-600"
           }`}
           style={{ fontFamily: "'Poppins', sans-serif" }}
@@ -71,7 +71,7 @@ export default function Hero({ darkMode }) {
 
         {/* Typing Effect */}
         <motion.p
-          className={`text-2xl md:text-4xl font-medium mb-15 text-left ${
+          className={`text-2xl md:text-4xl font-medium text-left mb-6 ${
             darkMode ? "text-gray-300" : "text-gray-900"
           }`}
           initial={{ opacity: 0 }}
@@ -81,8 +81,14 @@ export default function Hero({ darkMode }) {
           <Typing text="Full Stack Developer • AI Enthusiast • Graphic Designer" />
         </motion.p>
 
+        <motion.a className="text-xs md:text-lg">
+          Full-Stack Software Engineer specializing in scalable web applications
+          using React, Node.js & Cloud. I build production-ready systems with
+          clean APIs, secure authentication, and modern UI.
+        </motion.a>
+
         {/* Buttons Container */}
-        <div className="flex flex-row space-x-4">
+        <div className="flex flex-row space-x-4 py-10">
           {/* Download CV Button */}
           <motion.a
             href="https://drive.google.com/file/d/1IKQBQ0DftaA3NS8Bl71YMYkYddht8kaS/view?usp=sharing"
